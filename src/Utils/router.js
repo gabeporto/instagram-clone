@@ -1,8 +1,10 @@
 const { Router } = require('express')
+const UserController = require('../Controllers/UserController')
 
 const router = Router()
 
 // Criar usuário
+router.post('/users', UserController.createUser)
 // Fazer login
 // Ver feed
 // Dar like em uma foto
